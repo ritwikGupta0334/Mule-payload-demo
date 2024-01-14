@@ -29,6 +29,20 @@
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
+				  <configuration>
+    <cloudHubDeployment>
+      <uri>https://anypoint.mulesoft.com</uri>
+      <server>Anypoint</server>
+      <muleVersion>4.4.0</muleVersion>
+      <username>TUSHGUPT</username>
+      <password>Ritwik@22184</password>
+      <applicationName>payload-demo-application</applicationName>
+      <environment>Sandbox</environment>
+      <workers>1</workers>
+      <workerType>Micro</workerType>
+	  <objectStoreV2>true</objectStoreV2>
+    </cloudHubDeployment>
+    </configuration>
 			</plugin>
 		</plugins>
 	</build>
@@ -48,7 +62,14 @@
 		</dependency>
 	</dependencies>
 	
-  <distributionManagement>
+<distributionManagement>
+   <repository>
+      <id>github.com</id>
+        <url>https://github.com/ritwikGupta0334/Mule-payload-demo.git</url>
+   </repository>
+</distributionManagement>
+	
+<!--   <distributionManagement>
     <repository>
   <id>guptaritwik242</id>
   <url>https://pkgs.dev.azure.com/guptaritwik242/_packaging/guptaritwik242/maven/v1</url>
@@ -59,7 +80,7 @@
     <enabled>true</enabled>
   </snapshots>
 </repository>
-  </distributionManagement>
+  </distributionManagement> -->
 
 	<repositories>
 		<repository>
@@ -74,7 +95,13 @@
 			<url>https://repository.mulesoft.org/releases/</url>
 			<layout>default</layout>
 		</repository>
-		<repository>
+    <repository>
+        <id>mulesoft-snapshots</id>
+        <name>MuleSoft Snapshot Repository</name>
+        <url>http://repository.mulesoft.org/snapshots/</url>
+        <layout>default</layout>
+    </repository>
+		<!-- <repository>
   <id>guptaritwik242</id>
   <url>https://pkgs.dev.azure.com/guptaritwik242/_packaging/guptaritwik242/maven/v1</url>
   <releases>
@@ -83,7 +110,7 @@
   <snapshots>
     <enabled>true</enabled>
   </snapshots>
-</repository>
+</repository> -->
 	</repositories>
 
 	<pluginRepositories>
