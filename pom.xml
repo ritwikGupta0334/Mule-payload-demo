@@ -32,14 +32,14 @@
 				  <configuration>
     <cloudHubDeployment>
       <uri>https://anypoint.mulesoft.com</uri>
-      <server>Anypoint</server>
-      <muleVersion>4.4.0</muleVersion>
-      <username>TUSHGUPT</username>
-      <password>Ritwik@22184</password>
-      <applicationName>payload-demo-application</applicationName>
-      <environment>Sandbox</environment>
-      <workers>1</workers>
-      <workerType>Micro</workerType>
+      <server>${server}</server>
+      <muleVersion>${app.runtime}</muleVersion>
+      <username>${username}</username>
+      <password>${password}</password>
+      <applicationName>${cloudhub.application.name}</applicationName>
+      <environment>${environment}</environment>
+      <workers>${workers}</workers>
+      <workerType>${workerType}</workerType>
 	  <objectStoreV2>true</objectStoreV2>
     </cloudHubDeployment>
     </configuration>
