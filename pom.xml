@@ -29,17 +29,17 @@
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
-				  <configuration>
+<configuration>
     <cloudHubDeployment>
       <uri>https://anypoint.mulesoft.com</uri>
-      <server>${server}</server>
-      <muleVersion>${app.runtime}</muleVersion>
-      <username>${username}</username>
-      <password>${password}</password>
-      <applicationName>${cloudhub.application.name}</applicationName>
-      <environment>${environment}</environment>
-      <workers>${workers}</workers>
-      <workerType>${workerType}</workerType>
+      <server>Anypoint</server>
+      <muleVersion>4.4.0</muleVersion>
+      <username>TUSHGUPT</username>
+      <password>Ritwik@22184</password>
+      <applicationName>mule-payload-demo</applicationName>
+      <environment>Sandbox</environment>
+      <workers>1</workers>
+      <workerType>Micro</workerType>
 	  <objectStoreV2>true</objectStoreV2>
     </cloudHubDeployment>
     </configuration>
